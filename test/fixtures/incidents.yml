@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Fecha: 2015-05-13 16:16:42
+  Evento: MyString
+  Descripcion: MyString
+  Duracion: 2015-05-13 16:16:42
+  Solucion: MyString
+
+two:
+  Fecha: 2015-05-13 16:16:42
+  Evento: MyString
+  Descripcion: MyString
+  Duracion: 2015-05-13 16:16:42
+  Solucion: MyString

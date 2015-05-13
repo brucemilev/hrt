@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Incidentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Evento</th>
+      <th>Descripcion</th>
+      <th>Duracion</th>
+      <th>Solucion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @incidents.each do |incident| %>
+      <tr>
+        <td><%= incident.Fecha %></td>
+        <td><%= incident.Evento %></td>
+        <td><%= incident.Descripcion %></td>
+        <td><%= incident.Duracion %></td>
+        <td><%= incident.Solucion %></td>
+        <td><%= link_to 'Mostrar', incident %></td>
+        <td><%= link_to 'Editar', edit_incident_path(incident) %></td>
+          <td><%= link_to 'Borrar', incident, method: :delete, data: { confirm: 'Estas Seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Incidencia', new_incident_path %>
